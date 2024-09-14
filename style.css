@@ -1,0 +1,107 @@
+.product-container {
+    background-color: #efe1e1;
+    width: 70%;
+    height: 440px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.product-card {
+    width: 25%;
+    height: 375px;
+    background-color: #fcf8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 14px 14px 30px 0 rgba(20, 20, 20, 0.5);
+}
+
+.product-img img {
+    width: 200px;
+    height: 160px;
+    margin-top: 8px;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.product-description {
+    font-size: small;
+    width: 150px;
+    margin-top: 0px;
+    color: #0b0909;
+}
+
+.product-price {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.rating-img img {
+    width: 35px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.product-footer {
+    color: rgb(228, 232, 233);
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product-container .product-card:first-child .product-footer {
+    background-color: #090909;
+}
+
+.product-container .product-card:nth-child(2) .product-footer {
+    background-color: #ca2c2c;
+}
+
+.product-container .product-card:last-child .product-footer {
+    background-color: #191461;
+}
+
+.product-container .product-card:first-child .product-price {
+    color: #0b0505;
+}
+
+.product-container .product-card:nth-child(2) .product-price {
+    color: #d01111;
+}
+
+.product-container .product-card:last-child .product-price {
+    color: #150747;
+}
+
+/* Hover Effects */
+.product-container .product-card:first-child:hover .product-footer,
+.product-container .product-card:nth-child(2):hover .product-footer,
+.product-container .product-card:last-child:hover .product-footer {
+    background-color: darkgoldenrod;
+}
+
+.product-container .product-card:first-child:hover .product-price,
+.product-container .product-card:nth-child(2):hover .product-price,
+.product-container .product-card:last-child:hover .product-price {
+    color: darkgoldenrod;
+}
